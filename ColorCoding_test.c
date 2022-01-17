@@ -26,3 +26,8 @@ void testGetPairNumber(
     printf("Got pair number %d\n", pairNumber);
     assert(pairNumber == expectedPairNumber);
 }
+
+void testGetReferenceManual()
+{
+    GetReferenceManual();
+}
