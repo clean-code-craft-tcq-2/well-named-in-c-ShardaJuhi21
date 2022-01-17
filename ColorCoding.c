@@ -34,9 +34,8 @@ int GetPairNumber(const ColorPair* colorPair) {
             colorPair->minorColor + 1;
 }
 
-ColorPair GetReferenceManual(){
-    
-        ColorPair colorPair = GetColorPair(int pairNumber);
-    }
-    return colorPair;
+ColorPair GetReferenceManual(int PairNumber){
+       int pairNumber = PairNumber;
+        ColorPair colorPair = GetColorPair(pairNumber);
+        return colorPair;
 }
