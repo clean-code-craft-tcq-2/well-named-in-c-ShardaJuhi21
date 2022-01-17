@@ -39,7 +39,7 @@ PairList GetReferenceManual(int pairNumber){
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
     ColorPair colorPair = GetColorPair(pairNumber);
     ColorPairString(&colorPair, colorPairNames);
-    pairList->colorPair = colorPairNames;
+    pairList.colorPair = colorPairNames;
     pairList.pairNumber = pairNumber;
     return pairList ;
 }
