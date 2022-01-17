@@ -33,6 +33,6 @@ void testGetReferenceManual()
      PairList pairList;
      for (int pairNumber =0; pairNumber < MAX_COLORPAIR; pairNumber++){
          pairList = GetReferenceManual(pairNumber);
-         printf("%d %s ", pairList.pairNumber, pairList->colorPair);
+         printf("%d %s ", pairList.pairNumber, pairList.colorPair);
      }
 }
