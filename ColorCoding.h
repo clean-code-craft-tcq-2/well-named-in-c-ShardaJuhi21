@@ -19,7 +19,7 @@ typedef struct {
 } ColorPair;
 
 typedef struct {
-    ColorPair colorPair;
+    char* colorPair;
     int pairNumber;
 } PairList;
 
@@ -29,7 +29,7 @@ ColorPair GetColorPair(int pairNumber);
 
 int GetPairNumber(const ColorPair* colorPair) ;
 
-PairList GetReferenceManual();
+PairList GetReferenceManual(int pairNumber);
 
 void testGetColorPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
 
