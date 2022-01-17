@@ -31,6 +31,8 @@ void testGetReferenceManual()
 {
      printf("Color Pair Manual:\n PairNumber MajorColor MinorColor\n");
      PairList pairList;
-     pairList = GetReferenceManual();
-     printf("%d %s %s "pairList.pairNumber, pairList.colorPair.majorColor, pairList.colorPair.minorColor);
+     for (int pairNumber =0; pairNumber < MAX_COLORPAIR; pairNumber++){
+         pairList = GetReferenceManual(pairNumber);
+         printf("%d %s ", pairList.pairNumber, pairList->colorPair);
+     }
 }
