@@ -6,9 +6,9 @@ void testNumberToPair(int pairNumber,
     enum MajorColor expectedMajor,
     enum MinorColor expectedMinor)
 {
-    ColorPair colorPair = GetColorFromPairNumber(pairNumber);
+    ColorPair colorPair = GetColorPair(pairNumber);
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
-    ColorPairToString(&colorPair, colorPairNames);
+    ColorPairString(&colorPair, colorPairNames);
     printf("Got pair %s\n", colorPairNames);
     assert(colorPair.majorColor == expectedMajor);
     assert(colorPair.minorColor == expectedMinor);
@@ -22,7 +22,7 @@ void testPairToNumber(
     ColorPair colorPair;
     colorPair.majorColor = major;
     colorPair.minorColor = minor;
-    int pairNumber = GetPairNumberFromColor(&colorPair);
+    int pairNumber = GetPairNumber(&colorPair);
     printf("Got pair number %d\n", pairNumber);
     assert(pairNumber == expectedPairNumber);
 }
