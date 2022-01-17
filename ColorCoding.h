@@ -17,11 +17,11 @@ typedef struct {
     enum MinorColor minorColor;
 } ColorPair;
 
-void ColorPairToString(const ColorPair* colorPair, char* buffer) ;
+void ColorPairString(const ColorPair* colorPair, char* buffer) ;
 
-ColorPair GetColorFromPairNumber(int pairNumber);
+ColorPair GetColorPair(int pairNumber);
 
-int GetPairNumberFromColor(const ColorPair* colorPair) ;
+int GetPairNumber(const ColorPair* colorPair) ;
 
 void testNumberToPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
 
