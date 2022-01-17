@@ -30,9 +30,12 @@ void testGetPairNumber(
 void testGetReferenceManual()
 {
      printf("Color Pair Manual:\n PairNumber MajorColor MinorColor\n");
-     PairList pairList;
-     for (int pairNumber =0; pairNumber < MAX_COLORPAIR; pairNumber++){
-         pairList = GetReferenceManual(pairNumber);
-         printf("%d %s ", pairList.pairNumber, pairList.colorPair);
-     }
+        char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
+    for (int pairNumber =0; pairNumber < MAX_COLORPAIR; pairNumber++){
+     ColorPair colorPair = GetReferenceManual(pairNumber);
+ 
+    ColorPairString(&colorPair, colorPairNames);
+      printf("%d %s ", pairNumber, colorPairNames);
+    }
+
 }
