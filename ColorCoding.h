@@ -18,13 +18,18 @@ typedef struct {
     enum MinorColor minorColor;
 } ColorPair;
 
+typedef struct {
+    ColorPair colorPair;
+    int PairNumber pairNumber;
+} PairList;
+
 void ColorPairString(const ColorPair* colorPair, char* buffer) ;
 
 ColorPair GetColorPair(int pairNumber);
 
 int GetPairNumber(const ColorPair* colorPair) ;
 
-void GetReferenceManual(int pairNumber);
+PairList GetReferenceManual();
 
 void testGetColorPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
 
