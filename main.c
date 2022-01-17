@@ -2,9 +2,9 @@
 #include <assert.h>
 #include "ColorCoding.h"
 
-numberOfMajorColors =
+int numberOfMajorColors =
     sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
-numberOfMinorColors =
+int numberOfMinorColors =
     sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
