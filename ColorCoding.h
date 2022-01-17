@@ -23,6 +23,6 @@ ColorPair GetColorPair(int pairNumber);
 
 int GetPairNumber(const ColorPair* colorPair) ;
 
-void testNumberToPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
+void testGetColorPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
 
-void testPairToNumber(enum MajorColor major, enum MinorColor minor, int expectedPairNumber);
+void testGetPairNumber(enum MajorColor major, enum MinorColor minor, int expectedPairNumber);
