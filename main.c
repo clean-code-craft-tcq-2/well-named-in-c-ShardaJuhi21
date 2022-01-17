@@ -2,11 +2,11 @@
 #include "ColorCoding.h"
 
 int main() {
-    testNumberToPair(4, WHITE, BROWN);
-    testNumberToPair(5, WHITE, SLATE);
+    testGetColorPair(4, WHITE, BROWN);
+    testGetColorPair(5, WHITE, SLATE);
 
-    testPairToNumber(BLACK, ORANGE, 12);
-    testPairToNumber(VIOLET, SLATE, 25);
+    testGetPairNumber(BLACK, ORANGE, 12);
+    testGetPairNumber(VIOLET, SLATE, 25);
 
     return 0;
 }
