@@ -34,12 +34,9 @@ int GetPairNumber(const ColorPair* colorPair) {
             colorPair->minorColor + 1;
 }
 
-PairList GetReferenceManual(int pairNumber){
-    PairList pairList;
-    char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
-    ColorPair colorPair = GetColorPair(pairNumber);
-    ColorPairString(&colorPair, colorPairNames);
-    pairList.colorPair = colorPairNames;
-    pairList.pairNumber = pairNumber;
-    return pairList ;
+ColorPair GetReferenceManual(){
+    
+        ColorPair colorPair = GetColorPair(pairNumber);
+    }
+    return colorPair;
 }
