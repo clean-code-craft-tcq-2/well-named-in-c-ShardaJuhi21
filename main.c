@@ -8,5 +8,6 @@ int main() {
     testGetPairNumber(BLACK, ORANGE, 12);
     testGetPairNumber(VIOLET, SLATE, 25);
 
+    testGetReferenceManual();
     return 0;
 }
