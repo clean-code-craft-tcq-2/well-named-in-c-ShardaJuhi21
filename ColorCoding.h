@@ -20,7 +20,7 @@ typedef struct {
 
 typedef struct {
     ColorPair colorPair;
-    int PairNumber pairNumber;
+    int pairNumber;
 } PairList;
 
 void ColorPairString(const ColorPair* colorPair, char* buffer) ;
