@@ -24,7 +24,7 @@ ColorPair GetColorPair(int pairNumber);
 
 int GetPairNumber(const ColorPair* colorPair) ;
 
-ColorPair GetReferenceManual(int PairNumber);
+void GetReferenceManual();
 
 void testGetColorPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
 
