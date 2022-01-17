@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define MAX_COLORPAIR_NAME_CHARS = 16;
 
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
@@ -11,12 +12,10 @@ const char* MinorColorNames[] = {
     "Blue", "Orange", "Green", "Brown", "Slate"
 };
 
-int numberOfMajorColors =
+extern int numberOfMajorColors =
     sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
-int numberOfMinorColors =
+extern int numberOfMinorColors =
     sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
-
-const int MAX_COLORPAIR_NAME_CHARS = 16;
 
 
 typedef struct {
