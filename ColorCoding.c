@@ -41,7 +41,7 @@ int GetReferenceManual(){
          ColorPair colorPair = GetColorPair(pairNumber);
          char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
          ColorPairString(&colorPair, colorPairNames);
-         printf("%d\t %s\n", pairNumber, colorPairNames);
+         printf("%d\t%s\n", pairNumber, colorPairNames);
     }
     return TRUE;
 }
