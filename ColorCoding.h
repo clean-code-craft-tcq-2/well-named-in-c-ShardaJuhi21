@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define MAX_COLORPAIR_NAME_CHARS 16
 #define MAX_COLORPAIR 26
+#define TRUE 1
 
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
@@ -24,7 +25,7 @@ ColorPair GetColorPair(int pairNumber);
 
 int GetPairNumber(const ColorPair* colorPair) ;
 
-void GetReferenceManual();
+int GetReferenceManual();
 
 void testGetColorPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
 
