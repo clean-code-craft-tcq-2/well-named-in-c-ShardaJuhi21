@@ -29,6 +29,7 @@ void testGetPairNumber(
 
 void testGetReferenceManual()
 {
-    GetReferenceManual();
+    int retVal = GetReferenceManual();
+    assert(retVal == TRUE);
 
 }
