@@ -20,15 +20,10 @@ typedef struct {
 } ColorPair;
 
 void ColorPairString(const ColorPair* colorPair, char* buffer) ;
-
 ColorPair GetColorPair(int pairNumber);
-
 int GetPairNumber(const ColorPair* colorPair) ;
-
 int GetReferenceManual();
 
 void testGetColorPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor);
-
 void testGetPairNumber(enum MajorColor major, enum MinorColor minor, int expectedPairNumber);
-
 void testGetReferenceManual();
