@@ -35,7 +35,7 @@ int GetPairNumber(const ColorPair* colorPair) {
 }
 
 int GetReferenceManual(){
-    printf("\nColor Pair Manual:\n");
+    printf("\nColor Pair Manual:\nPairNo. Maj.Color Min.Color\n");
     for (int pairNumber=1; pairNumber<MAX_COLORPAIR; pairNumber++)
     {
          ColorPair colorPair = GetColorPair(pairNumber);
