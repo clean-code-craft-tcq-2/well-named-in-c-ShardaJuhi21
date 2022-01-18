@@ -34,8 +34,8 @@ int GetPairNumber(const ColorPair* colorPair) {
             colorPair->minorColor + 1;
 }
 
-void GetReferenceManual(){
-    printf("Color Pair Manual:\n PairNumber MajorColor MinorColor\n");
+int GetReferenceManual(){
+    printf("\nColor Pair Manual:\n");
     for (int pairNumber=1; pairNumber<MAX_COLORPAIR; pairNumber++)
     {
          ColorPair colorPair = GetColorPair(pairNumber);
@@ -43,4 +43,5 @@ void GetReferenceManual(){
          ColorPairString(&colorPair, colorPairNames);
          printf("%d %s\n", pairNumber, colorPairNames);
     }
+    return TRUE;
 }
